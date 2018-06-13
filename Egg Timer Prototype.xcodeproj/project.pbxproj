@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00A41A620CBF97200CD5F72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41A520CBF97200CD5F72 /* MainViewController.swift */; };
+		F00A41AF20CC035F00CD5F72 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */; };
+		F00A41B120CC05D700CD5F72 /* BoilRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */; };
+		F00A41B320CC07BB00CD5F72 /* CircularRounderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B220CC07BB00CD5F72 /* CircularRounderButton.swift */; };
+		F00A41B520D19C2700CD5F72 /* Egg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B420D19C2700CD5F72 /* Egg.swift */; };
+		F00A41BB20D1A20E00CD5F72 /* EggSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */; };
+		F00A41BD20D1A3E700CD5F72 /* EggSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */; };
 		F0C25C0120CBD1CA009F4455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */; };
-		F0C25C0320CBD1CA009F4455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C25C0220CBD1CA009F4455 /* ViewController.swift */; };
 		F0C25C0620CBD1CA009F4455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0420CBD1CA009F4455 /* Main.storyboard */; };
 		F0C25C0820CBD1CC009F4455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0720CBD1CC009F4455 /* Assets.xcassets */; };
 		F0C25C0B20CBD1CC009F4455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0920CBD1CC009F4455 /* LaunchScreen.storyboard */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F00A41A520CBF97200CD5F72 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = "../../../../../Desktop/maths-app/View/RoundedButton.swift"; sourceTree = "<group>"; };
+		F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilRoundedButton.swift; sourceTree = "<group>"; };
+		F00A41B220CC07BB00CD5F72 /* CircularRounderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRounderButton.swift; sourceTree = "<group>"; };
+		F00A41B420D19C2700CD5F72 /* Egg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg.swift; sourceTree = "<group>"; };
+		F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggSelector.xib; sourceTree = "<group>"; };
+		F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggSelector.swift; sourceTree = "<group>"; };
 		F0C25BFD20CBD1CA009F4455 /* Egg Timer Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0C25C0220CBD1CA009F4455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0C25C0520CBD1CA009F4455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0C25C0720CBD1CC009F4455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0C25C0A20CBD1CC009F4455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +86,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F00A41A720CC025F00CD5F72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */,
+				F00A41A520CBF97200CD5F72 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F00A41A820CC026800CD5F72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00A41B420D19C2700CD5F72 /* Egg.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F00A41A920CC026D00CD5F72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0C25C0420CBD1CA009F4455 /* Main.storyboard */,
+				F0C25C0920CBD1CC009F4455 /* LaunchScreen.storyboard */,
+				F0C25C0720CBD1CC009F4455 /* Assets.xcassets */,
+				F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */,
+				F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */,
+				F00A41B220CC07BB00CD5F72 /* CircularRounderButton.swift */,
+				F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */,
+				F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F0C25BF420CBD1CA009F4455 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +141,9 @@
 		F0C25BFF20CBD1CA009F4455 /* Egg Timer Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */,
-				F0C25C0220CBD1CA009F4455 /* ViewController.swift */,
-				F0C25C0420CBD1CA009F4455 /* Main.storyboard */,
-				F0C25C0720CBD1CC009F4455 /* Assets.xcassets */,
-				F0C25C0920CBD1CC009F4455 /* LaunchScreen.storyboard */,
+				F00A41A920CC026D00CD5F72 /* View */,
+				F00A41A820CC026800CD5F72 /* Models */,
+				F00A41A720CC025F00CD5F72 /* Controllers */,
 				F0C25C0C20CBD1CC009F4455 /* Info.plist */,
 			);
 			path = "Egg Timer Prototype";
@@ -229,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00A41BB20D1A20E00CD5F72 /* EggSelector.xib in Resources */,
 				F0C25C0B20CBD1CC009F4455 /* LaunchScreen.storyboard in Resources */,
 				F0C25C0820CBD1CC009F4455 /* Assets.xcassets in Resources */,
 				F0C25C0620CBD1CA009F4455 /* Main.storyboard in Resources */,
@@ -256,8 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0C25C0320CBD1CA009F4455 /* ViewController.swift in Sources */,
+				F00A41B320CC07BB00CD5F72 /* CircularRounderButton.swift in Sources */,
+				F00A41A620CBF97200CD5F72 /* MainViewController.swift in Sources */,
+				F00A41B120CC05D700CD5F72 /* BoilRoundedButton.swift in Sources */,
+				F00A41B520D19C2700CD5F72 /* Egg.swift in Sources */,
 				F0C25C0120CBD1CA009F4455 /* AppDelegate.swift in Sources */,
+				F00A41BD20D1A3E700CD5F72 /* EggSelector.swift in Sources */,
+				F00A41AF20CC035F00CD5F72 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

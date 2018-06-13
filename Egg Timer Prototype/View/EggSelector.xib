@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EggSelector" customModule="Egg_Timer_Prototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runny yolk, almost set white" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCO-Pe-nkv">
+                    <rect key="frame" x="13.5" y="57" width="193" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hard Boiled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9G-rj-Rdb">
+                    <rect key="frame" x="14" y="28.5" width="104" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxw-xB-YfH">
+                    <rect key="frame" x="175" y="35.5" width="32" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZCO-Pe-nkv" secondAttribute="trailing" constant="13.5" id="IjN-km-JYA"/>
+                <constraint firstItem="ZCO-Pe-nkv" firstAttribute="top" secondItem="s9G-rj-Rdb" secondAttribute="bottom" constant="5" id="Roq-1f-6Yh"/>
+                <constraint firstItem="ZCO-Pe-nkv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13.5" id="Xiy-06-NET"/>
+                <constraint firstItem="ZCO-Pe-nkv" firstAttribute="top" secondItem="fxw-xB-YfH" secondAttribute="bottom" constant="5" id="Y0T-R6-2NB"/>
+                <constraint firstItem="s9G-rj-Rdb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="kky-18-okM"/>
+                <constraint firstItem="ZCO-Pe-nkv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tGb-gJ-ohP"/>
+                <constraint firstItem="ZCO-Pe-nkv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="v1P-JU-O1C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fxw-xB-YfH" secondAttribute="trailing" constant="13" id="zo8-cx-2uu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="desc" destination="ZCO-Pe-nkv" id="HzP-bM-RoM"/>
+                <outlet property="time" destination="fxw-xB-YfH" id="xQS-ef-dOm"/>
+                <outlet property="title" destination="s9G-rj-Rdb" id="IkC-yE-fIm"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="-245"/>
+        </view>
+    </objects>
+</document>

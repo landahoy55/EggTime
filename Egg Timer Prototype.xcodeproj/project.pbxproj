@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20269BB09623173BBF178DF7 /* Pods_Egg_Timer_PrototypeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E5065D9AC19F19D929A147 /* Pods_Egg_Timer_PrototypeUITests.framework */; };
+		A93E764626BA5DF44882D3C1 /* Pods_Egg_Timer_PrototypeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BB0BA50E59683FFA0A9BC9 /* Pods_Egg_Timer_PrototypeTests.framework */; };
+		D803A6AA359E05E5F2447708 /* Pods_Egg_Timer_Prototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D095A790DBE3ED7BD0E6FD /* Pods_Egg_Timer_Prototype.framework */; };
 		F00A41A620CBF97200CD5F72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41A520CBF97200CD5F72 /* MainViewController.swift */; };
 		F00A41AF20CC035F00CD5F72 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */; };
 		F00A41B120CC05D700CD5F72 /* BoilRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */; };
@@ -14,12 +17,17 @@
 		F00A41B520D19C2700CD5F72 /* Egg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B420D19C2700CD5F72 /* Egg.swift */; };
 		F00A41BB20D1A20E00CD5F72 /* EggSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */; };
 		F00A41BD20D1A3E700CD5F72 /* EggSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */; };
+		F05D523D20D55178009D7BB3 /* UIPageControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */; };
+		F05D523F20D5523E009D7BB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D523E20D5523E009D7BB3 /* Constants.swift */; };
+		F05D524120D567B6009D7BB3 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D524020D567B6009D7BB3 /* DoneViewController.swift */; };
+		F05D524320D9A2E1009D7BB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */; };
 		F0C25C0120CBD1CA009F4455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */; };
 		F0C25C0620CBD1CA009F4455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0420CBD1CA009F4455 /* Main.storyboard */; };
 		F0C25C0820CBD1CC009F4455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0720CBD1CC009F4455 /* Assets.xcassets */; };
 		F0C25C0B20CBD1CC009F4455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0920CBD1CC009F4455 /* LaunchScreen.storyboard */; };
 		F0C25C1620CBD1CC009F4455 /* Egg_Timer_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C25C1520CBD1CC009F4455 /* Egg_Timer_PrototypeTests.swift */; };
 		F0C25C2120CBD1CC009F4455 /* Egg_Timer_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C25C2020CBD1CC009F4455 /* Egg_Timer_PrototypeUITests.swift */; };
+		F0F252FB20E2BFF10097B4F7 /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F252FA20E2BFF10097B4F7 /* UNService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFEC8AFB7A5E47D693A2DAB /* Pods-Egg Timer PrototypeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egg Timer PrototypeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egg Timer PrototypeTests/Pods-Egg Timer PrototypeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		11F23EB1227EE76ED0C4E65F /* Pods-Egg Timer PrototypeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egg Timer PrototypeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egg Timer PrototypeUITests/Pods-Egg Timer PrototypeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		13BB0BA50E59683FFA0A9BC9 /* Pods_Egg_Timer_PrototypeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Egg_Timer_PrototypeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3338886AF5B3E614A0213357 /* Pods-Egg Timer Prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egg Timer Prototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egg Timer Prototype/Pods-Egg Timer Prototype.debug.xcconfig"; sourceTree = "<group>"; };
+		91510AD16CED9415581188C6 /* Pods-Egg Timer Prototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egg Timer Prototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-Egg Timer Prototype/Pods-Egg Timer Prototype.release.xcconfig"; sourceTree = "<group>"; };
+		97E5065D9AC19F19D929A147 /* Pods_Egg_Timer_PrototypeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Egg_Timer_PrototypeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69AEE497A8FBFBEB73154DE /* Pods-Egg Timer PrototypeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egg Timer PrototypeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Egg Timer PrototypeTests/Pods-Egg Timer PrototypeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2D095A790DBE3ED7BD0E6FD /* Pods_Egg_Timer_Prototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Egg_Timer_Prototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00A41A520CBF97200CD5F72 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = "../../../../../Desktop/maths-app/View/RoundedButton.swift"; sourceTree = "<group>"; };
 		F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilRoundedButton.swift; sourceTree = "<group>"; };
@@ -47,6 +63,10 @@
 		F00A41B420D19C2700CD5F72 /* Egg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg.swift; sourceTree = "<group>"; };
 		F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggSelector.xib; sourceTree = "<group>"; };
 		F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggSelector.swift; sourceTree = "<group>"; };
+		F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Extension.swift"; sourceTree = "<group>"; };
+		F05D523E20D5523E009D7BB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F05D524020D567B6009D7BB3 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F0C25BFD20CBD1CA009F4455 /* Egg Timer Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0C25C0520CBD1CA009F4455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +79,8 @@
 		F0C25C1C20CBD1CC009F4455 /* Egg Timer PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Egg Timer PrototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C25C2020CBD1CC009F4455 /* Egg_Timer_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg_Timer_PrototypeUITests.swift; sourceTree = "<group>"; };
 		F0C25C2220CBD1CC009F4455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F252FA20E2BFF10097B4F7 /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
+		F9E125B8658B88629EAC5B84 /* Pods-Egg Timer PrototypeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egg Timer PrototypeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Egg Timer PrototypeUITests/Pods-Egg Timer PrototypeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D803A6AA359E05E5F2447708 /* Pods_Egg_Timer_Prototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93E764626BA5DF44882D3C1 /* Pods_Egg_Timer_PrototypeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,17 +104,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20269BB09623173BBF178DF7 /* Pods_Egg_Timer_PrototypeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29CCBC621B9FBE9B8ACA2639 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3338886AF5B3E614A0213357 /* Pods-Egg Timer Prototype.debug.xcconfig */,
+				91510AD16CED9415581188C6 /* Pods-Egg Timer Prototype.release.xcconfig */,
+				0BFEC8AFB7A5E47D693A2DAB /* Pods-Egg Timer PrototypeTests.debug.xcconfig */,
+				B69AEE497A8FBFBEB73154DE /* Pods-Egg Timer PrototypeTests.release.xcconfig */,
+				11F23EB1227EE76ED0C4E65F /* Pods-Egg Timer PrototypeUITests.debug.xcconfig */,
+				F9E125B8658B88629EAC5B84 /* Pods-Egg Timer PrototypeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57918749EB06D7E44973EBC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D095A790DBE3ED7BD0E6FD /* Pods_Egg_Timer_Prototype.framework */,
+				13BB0BA50E59683FFA0A9BC9 /* Pods_Egg_Timer_PrototypeTests.framework */,
+				97E5065D9AC19F19D929A147 /* Pods_Egg_Timer_PrototypeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F00A41A720CC025F00CD5F72 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */,
 				F00A41A520CBF97200CD5F72 /* MainViewController.swift */,
+				F05D524020D567B6009D7BB3 /* DoneViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +167,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F05D523B20D55157009D7BB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */,
+				F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F0C25BF420CBD1CA009F4455 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +183,8 @@
 				F0C25C1420CBD1CC009F4455 /* Egg Timer PrototypeTests */,
 				F0C25C1F20CBD1CC009F4455 /* Egg Timer PrototypeUITests */,
 				F0C25BFE20CBD1CA009F4455 /* Products */,
+				29CCBC621B9FBE9B8ACA2639 /* Pods */,
+				57918749EB06D7E44973EBC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,10 +201,13 @@
 		F0C25BFF20CBD1CA009F4455 /* Egg Timer Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				F0F252F720E2BD780097B4F7 /* Services */,
+				F05D523B20D55157009D7BB3 /* Extensions */,
 				F00A41A920CC026D00CD5F72 /* View */,
 				F00A41A820CC026800CD5F72 /* Models */,
 				F00A41A720CC025F00CD5F72 /* Controllers */,
 				F0C25C0C20CBD1CC009F4455 /* Info.plist */,
+				F05D523E20D5523E009D7BB3 /* Constants.swift */,
 			);
 			path = "Egg Timer Prototype";
 			sourceTree = "<group>";
@@ -167,6 +230,14 @@
 			path = "Egg Timer PrototypeUITests";
 			sourceTree = "<group>";
 		};
+		F0F252F720E2BD780097B4F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F0F252FA20E2BFF10097B4F7 /* UNService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C25C2520CBD1CC009F4455 /* Build configuration list for PBXNativeTarget "Egg Timer Prototype" */;
 			buildPhases = (
+				1770A0940A03199AB95F63DD /* [CP] Check Pods Manifest.lock */,
 				F0C25BF920CBD1CA009F4455 /* Sources */,
 				F0C25BFA20CBD1CA009F4455 /* Frameworks */,
 				F0C25BFB20CBD1CA009F4455 /* Resources */,
+				49C731C1E7D48026B5E741A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C25C2820CBD1CC009F4455 /* Build configuration list for PBXNativeTarget "Egg Timer PrototypeTests" */;
 			buildPhases = (
+				C587F9F01C04663D834F7875 /* [CP] Check Pods Manifest.lock */,
 				F0C25C0D20CBD1CC009F4455 /* Sources */,
 				F0C25C0E20CBD1CC009F4455 /* Frameworks */,
 				F0C25C0F20CBD1CC009F4455 /* Resources */,
@@ -209,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C25C2B20CBD1CC009F4455 /* Build configuration list for PBXNativeTarget "Egg Timer PrototypeUITests" */;
 			buildPhases = (
+				691F037A8506AFA8DE0A95EC /* [CP] Check Pods Manifest.lock */,
 				F0C25C1820CBD1CC009F4455 /* Sources */,
 				F0C25C1920CBD1CC009F4455 /* Frameworks */,
 				F0C25C1A20CBD1CC009F4455 /* Resources */,
@@ -294,18 +369,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1770A0940A03199AB95F63DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Egg Timer Prototype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49C731C1E7D48026B5E741A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Egg Timer Prototype/Pods-Egg Timer Prototype-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Egg Timer Prototype/Pods-Egg Timer Prototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		691F037A8506AFA8DE0A95EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Egg Timer PrototypeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C587F9F01C04663D834F7875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Egg Timer PrototypeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0C25BF920CBD1CA009F4455 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05D524320D9A2E1009D7BB3 /* UIView+Extension.swift in Sources */,
 				F00A41B320CC07BB00CD5F72 /* CircularRounderButton.swift in Sources */,
 				F00A41A620CBF97200CD5F72 /* MainViewController.swift in Sources */,
 				F00A41B120CC05D700CD5F72 /* BoilRoundedButton.swift in Sources */,
 				F00A41B520D19C2700CD5F72 /* Egg.swift in Sources */,
+				F05D523D20D55178009D7BB3 /* UIPageControl+Extension.swift in Sources */,
+				F0F252FB20E2BFF10097B4F7 /* UNService.swift in Sources */,
 				F0C25C0120CBD1CA009F4455 /* AppDelegate.swift in Sources */,
+				F05D524120D567B6009D7BB3 /* DoneViewController.swift in Sources */,
 				F00A41BD20D1A3E700CD5F72 /* EggSelector.swift in Sources */,
 				F00A41AF20CC035F00CD5F72 /* RoundedButton.swift in Sources */,
+				F05D523F20D5523E009D7BB3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +631,7 @@
 		};
 		F0C25C2620CBD1CC009F4455 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3338886AF5B3E614A0213357 /* Pods-Egg Timer Prototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +650,7 @@
 		};
 		F0C25C2720CBD1CC009F4455 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91510AD16CED9415581188C6 /* Pods-Egg Timer Prototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +669,7 @@
 		};
 		F0C25C2920CBD1CC009F4455 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFEC8AFB7A5E47D693A2DAB /* Pods-Egg Timer PrototypeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +691,7 @@
 		};
 		F0C25C2A20CBD1CC009F4455 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69AEE497A8FBFBEB73154DE /* Pods-Egg Timer PrototypeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +713,7 @@
 		};
 		F0C25C2C20CBD1CC009F4455 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F23EB1227EE76ED0C4E65F /* Pods-Egg Timer PrototypeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -574,6 +734,7 @@
 		};
 		F0C25C2D20CBD1CC009F4455 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E125B8658B88629EAC5B84 /* Pods-Egg Timer PrototypeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

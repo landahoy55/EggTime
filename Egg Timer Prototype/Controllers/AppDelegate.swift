@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().shadowImage = UIImage()
         //UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
+        window?.tintColor = #colorLiteral(red: 0, green: 0.7538558841, blue: 0.7478500605, alpha: 1)
+        
         return true
     }
 

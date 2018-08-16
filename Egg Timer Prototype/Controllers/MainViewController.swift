@@ -9,6 +9,21 @@
 import UIKit
 import UICircularProgressRing
 
+//TODO: - Break into seperate file
+private enum State {
+    case closed
+    case open
+}
+
+extension State {
+    var opposite: State {
+        switch self {
+        case .open: return .closed
+        case .closed: return .open
+        }
+    }
+}
+
 class MainViewController: UIViewController, UIScrollViewDelegate {
 
     
@@ -21,6 +36,13 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pulseview: UIView!
     @IBOutlet weak var progressRing: UICircularProgressRingView!
     
+    @IBOutlet weak var promptView: UIView!
+    
+    //constraint to adjust
+    @IBOutlet weak var bottomConstraintPopUpView: NSLayoutConstraint!
+    
+    
+    
     var eggs = [Egg]()
     
     var originalTime = 5
@@ -29,20 +51,14 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     var isTimerRunning = false
     var resumeTapped = false
     
+    //Default is
+    var chosenEgg = Data.eggModels[0]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
-        let soft = Egg(type: "Soft Boiled", time: 200, description: "Soft and creamy, let the white bit wobble")
-        eggs.append(soft)
-        
-        let medium = Egg(type: "Medium Boiled", time: 300, description: "Little bit runny in the middle, just perfect")
-        eggs.append(medium)
-        
-        let hard = Egg(type: "Hard Boiled", time: 400, description: "Proper good for sandwiches, none of that green bit though")
-        eggs.append(hard)
-        
+        eggs = Data.createEggs()
         
         //set up scroll view
         //enabling scroll view
@@ -52,7 +68,6 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         selectorScrollView.delegate = self
         
         
-        
         eggTypeLabel.alpha = 0
         
         //set up page view
@@ -60,7 +75,10 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     
         loadEggSelectionView()
         animatePulseView()
+        
         changeStartButtonColour(to: Colours.lightYellow)
+        
+        promptView.addGestureRecognizer(tapRecognizer)
         
         //set up observers
         NotificationCenter.default.addObserver(self, selector: #selector(enterBackground(notification:)), name: .UIApplicationDidEnterBackground, object: nil)
@@ -91,7 +109,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
                 //set up
                 selectorView.title.text = egg.type
                 selectorView.desc.text = egg.description
-                selectorView.time.text = egg.timeFormatted()
+//                selectorView.time.text = egg.timeFormatted()
                 selectorView.tag = index
                 
                 //add to subview (adding to the right)
@@ -192,6 +210,48 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
+    //pop up
+    private var currentState: State = .closed
+    
+    private lazy var tapRecognizer: UITapGestureRecognizer = {
+        let recognizer = UITapGestureRecognizer()
+        recognizer.addTarget(self, action: #selector(popupViewTapped(recognizer:)))
+        return recognizer
+    }()
+    
+    @objc private func popupViewTapped(recognizer: UITapGestureRecognizer) {
+        let state = currentState.opposite
+        let transitionAnimator = UIViewPropertyAnimator(duration: 1, dampingRatio: 1, animations: {
+            switch state {
+            case .open:
+                self.bottomConstraintPopUpView.constant = 0
+                
+            case .closed:
+                self.bottomConstraintPopUpView.constant = 440
+            }
+            self.view.layoutIfNeeded()
+        })
+        transitionAnimator.addCompletion { position in
+            switch position {
+            case .start:
+                self.currentState = state.opposite
+            case .end:
+                self.currentState = state
+            case .current:
+                ()
+            }
+            switch self.currentState {
+            case .open:
+                self.bottomConstraintPopUpView.constant = 0
+            case .closed:
+                self.bottomConstraintPopUpView.constant = 440
+            }
+        }
+        transitionAnimator.startAnimation()
+    }
+    
+    //TODO: Refactor with state?
+    //Switch or enum?
     @IBAction func startButtonTapped(_ sender: UIButton) {
         
         if isTimerRunning == false {
@@ -263,6 +323,17 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "settingsSegue" {
+            let settingsVC = segue.destination as! SettingsViewController
+            settingsVC.customTimeDelegate = self
+        }
+    }
+    
+    @IBAction func settingsButton(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "settingsSegue", sender: self)
+    }
+    
     func animatePulseView(){
         
         pulseview.alpha = 1
@@ -311,6 +382,11 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             self.pageControl.alpha = 1
         }
     }
+
+//unwind segue
+    @IBAction func unwindToMainVC(segue:UIStoryboardSegue) { }
+
+
 }
 
 extension MainViewController {
@@ -325,6 +401,9 @@ extension MainViewController {
         pageControl.currentPage = Int(page)
         
         let index = Int(page)
+        
+        //choose egg...
+        chosenEgg = eggs[index]
         
         pageControl.customPageControl(dotFillColor: .black, dotBorderColor: .black, dotBorderWidth: 0.5)
         
@@ -359,6 +438,13 @@ extension MainViewController {
         }
     }
     
+}
+
+extension MainViewController: SettingsDelegate {
+    
+    func customTime(toSet length: Int) {
+        print("DELEGATE FIRED OFF", length)
+    }
     
 }
 

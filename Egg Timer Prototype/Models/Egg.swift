@@ -6,12 +6,14 @@
 //  Copyright © 2018 landahoy55. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Egg {
+    
     var type: String
     var time: Int
     var description: String
+    var colour: UIColor
     
     func timeFormatted() -> String {
         

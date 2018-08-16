@@ -12,6 +12,6 @@ class EggSelector: UIView {
 
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var desc: UILabel!
-    @IBOutlet weak var time: UILabel!
+    //@IBOutlet weak var time: UILabel!
     
 }

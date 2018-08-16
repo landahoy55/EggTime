@@ -17,10 +17,12 @@
 		F00A41B520D19C2700CD5F72 /* Egg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B420D19C2700CD5F72 /* Egg.swift */; };
 		F00A41BB20D1A20E00CD5F72 /* EggSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */; };
 		F00A41BD20D1A3E700CD5F72 /* EggSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */; };
+		F04C218620E90748006584E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04C218520E90748006584E8 /* SettingsViewController.swift */; };
 		F05D523D20D55178009D7BB3 /* UIPageControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */; };
 		F05D523F20D5523E009D7BB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D523E20D5523E009D7BB3 /* Constants.swift */; };
 		F05D524120D567B6009D7BB3 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D524020D567B6009D7BB3 /* DoneViewController.swift */; };
 		F05D524320D9A2E1009D7BB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */; };
+		F0C188102125823800D43E4E /* Eggs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C1880F2125823800D43E4E /* Eggs.swift */; };
 		F0C25C0120CBD1CA009F4455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */; };
 		F0C25C0620CBD1CA009F4455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0420CBD1CA009F4455 /* Main.storyboard */; };
 		F0C25C0820CBD1CC009F4455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0720CBD1CC009F4455 /* Assets.xcassets */; };
@@ -63,10 +65,12 @@
 		F00A41B420D19C2700CD5F72 /* Egg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg.swift; sourceTree = "<group>"; };
 		F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggSelector.xib; sourceTree = "<group>"; };
 		F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggSelector.swift; sourceTree = "<group>"; };
+		F04C218520E90748006584E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Extension.swift"; sourceTree = "<group>"; };
 		F05D523E20D5523E009D7BB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F05D524020D567B6009D7BB3 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F0C1880F2125823800D43E4E /* Eggs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eggs.swift; sourceTree = "<group>"; };
 		F0C25BFD20CBD1CA009F4455 /* Egg Timer Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0C25C0520CBD1CA009F4455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */,
+				F04C218520E90748006584E8 /* SettingsViewController.swift */,
 				F00A41A520CBF97200CD5F72 /* MainViewController.swift */,
 				F05D524020D567B6009D7BB3 /* DoneViewController.swift */,
 			);
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F00A41B420D19C2700CD5F72 /* Egg.swift */,
+				F0C1880F2125823800D43E4E /* Eggs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -450,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F05D524320D9A2E1009D7BB3 /* UIView+Extension.swift in Sources */,
+				F0C188102125823800D43E4E /* Eggs.swift in Sources */,
 				F00A41B320CC07BB00CD5F72 /* CircularRounderButton.swift in Sources */,
 				F00A41A620CBF97200CD5F72 /* MainViewController.swift in Sources */,
 				F00A41B120CC05D700CD5F72 /* BoilRoundedButton.swift in Sources */,
@@ -459,6 +466,7 @@
 				F0C25C0120CBD1CA009F4455 /* AppDelegate.swift in Sources */,
 				F05D524120D567B6009D7BB3 /* DoneViewController.swift in Sources */,
 				F00A41BD20D1A3E700CD5F72 /* EggSelector.swift in Sources */,
+				F04C218620E90748006584E8 /* SettingsViewController.swift in Sources */,
 				F00A41AF20CC035F00CD5F72 /* RoundedButton.swift in Sources */,
 				F05D523F20D5523E009D7BB3 /* Constants.swift in Sources */,
 			);

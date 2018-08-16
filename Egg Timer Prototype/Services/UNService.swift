@@ -10,7 +10,7 @@ import Foundation
 import UserNotifications
 import UIKit
 
-//NSObect required to delegate to self.
+//NSObject required to delegate to self.
 class UNService: NSObject {
     
     //singleton setup

@@ -65,6 +65,10 @@ class UNService: NSObject {
         unCenter.add(request)
     }
     
+    
+    func removeRequest() {
+        unCenter.removePendingNotificationRequests(withIdentifiers: ["userNotification.timer"])
+    }
 }
 
 extension UNService: UNUserNotificationCenterDelegate {
@@ -75,10 +79,8 @@ extension UNService: UNUserNotificationCenterDelegate {
         
         //trigger segue.
         print("UN did recieve response")
-    
         completionHandler()
         
-    
         
     }
     
@@ -87,8 +89,7 @@ extension UNService: UNUserNotificationCenterDelegate {
         //what will happen if app is in foreground... ie, no badge.
         print("UN will present")
      
-        let options: UNNotificationPresentationOptions = [.alert, .sound]
-
+        let options: UNNotificationPresentationOptions = []
         completionHandler(options)
         
     }

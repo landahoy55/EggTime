@@ -13,15 +13,20 @@
 		F00A41A620CBF97200CD5F72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41A520CBF97200CD5F72 /* MainViewController.swift */; };
 		F00A41AF20CC035F00CD5F72 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */; };
 		F00A41B120CC05D700CD5F72 /* BoilRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */; };
-		F00A41B320CC07BB00CD5F72 /* CircularRounderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B220CC07BB00CD5F72 /* CircularRounderButton.swift */; };
+		F00A41B320CC07BB00CD5F72 /* CircularRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B220CC07BB00CD5F72 /* CircularRoundedButton.swift */; };
 		F00A41B520D19C2700CD5F72 /* Egg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41B420D19C2700CD5F72 /* Egg.swift */; };
 		F00A41BB20D1A20E00CD5F72 /* EggSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */; };
 		F00A41BD20D1A3E700CD5F72 /* EggSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */; };
+		F03C69FE2127234500F53482 /* ProgramaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C69FD2127234500F53482 /* ProgramaticViewController.swift */; };
+		F03C6A00212E094900F53482 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C69FF212E094900F53482 /* UIColor+Extension.swift */; };
 		F04C218620E90748006584E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04C218520E90748006584E8 /* SettingsViewController.swift */; };
 		F05D523D20D55178009D7BB3 /* UIPageControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */; };
 		F05D523F20D5523E009D7BB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D523E20D5523E009D7BB3 /* Constants.swift */; };
 		F05D524120D567B6009D7BB3 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D524020D567B6009D7BB3 /* DoneViewController.swift */; };
 		F05D524320D9A2E1009D7BB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */; };
+		F092531A213C68BB00CE9355 /* DoneScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0925319213C68BB00CE9355 /* DoneScreenView.swift */; };
+		F09F844D212710A60033D09C /* Guidance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09F844C212710A60033D09C /* Guidance.swift */; };
+		F09F844F212710D40033D09C /* Guidance.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09F844E212710D40033D09C /* Guidance.xib */; };
 		F0C188102125823800D43E4E /* Eggs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C1880F2125823800D43E4E /* Eggs.swift */; };
 		F0C25C0120CBD1CA009F4455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */; };
 		F0C25C0620CBD1CA009F4455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C25C0420CBD1CA009F4455 /* Main.storyboard */; };
@@ -61,15 +66,20 @@
 		F00A41A520CBF97200CD5F72 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = "../../../../../Desktop/maths-app/View/RoundedButton.swift"; sourceTree = "<group>"; };
 		F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilRoundedButton.swift; sourceTree = "<group>"; };
-		F00A41B220CC07BB00CD5F72 /* CircularRounderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRounderButton.swift; sourceTree = "<group>"; };
+		F00A41B220CC07BB00CD5F72 /* CircularRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRoundedButton.swift; sourceTree = "<group>"; };
 		F00A41B420D19C2700CD5F72 /* Egg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg.swift; sourceTree = "<group>"; };
 		F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EggSelector.xib; sourceTree = "<group>"; };
 		F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggSelector.swift; sourceTree = "<group>"; };
+		F03C69FD2127234500F53482 /* ProgramaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticViewController.swift; sourceTree = "<group>"; };
+		F03C69FF212E094900F53482 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F04C218520E90748006584E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Extension.swift"; sourceTree = "<group>"; };
 		F05D523E20D5523E009D7BB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F05D524020D567B6009D7BB3 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F0925319213C68BB00CE9355 /* DoneScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneScreenView.swift; sourceTree = "<group>"; };
+		F09F844C212710A60033D09C /* Guidance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidance.swift; sourceTree = "<group>"; };
+		F09F844E212710D40033D09C /* Guidance.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Guidance.xib; sourceTree = "<group>"; };
 		F0C1880F2125823800D43E4E /* Eggs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eggs.swift; sourceTree = "<group>"; };
 		F0C25BFD20CBD1CA009F4455 /* Egg Timer Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C25C0020CBD1CA009F4455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +155,7 @@
 				F04C218520E90748006584E8 /* SettingsViewController.swift */,
 				F00A41A520CBF97200CD5F72 /* MainViewController.swift */,
 				F05D524020D567B6009D7BB3 /* DoneViewController.swift */,
+				F03C69FD2127234500F53482 /* ProgramaticViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,9 +177,12 @@
 				F0C25C0720CBD1CC009F4455 /* Assets.xcassets */,
 				F00A41AE20CC035F00CD5F72 /* RoundedButton.swift */,
 				F00A41B020CC05D700CD5F72 /* BoilRoundedButton.swift */,
-				F00A41B220CC07BB00CD5F72 /* CircularRounderButton.swift */,
+				F00A41B220CC07BB00CD5F72 /* CircularRoundedButton.swift */,
 				F00A41BA20D1A20E00CD5F72 /* EggSelector.xib */,
 				F00A41BC20D1A3E700CD5F72 /* EggSelector.swift */,
+				F09F844C212710A60033D09C /* Guidance.swift */,
+				F09F844E212710D40033D09C /* Guidance.xib */,
+				F0925319213C68BB00CE9355 /* DoneScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +192,7 @@
 			children = (
 				F05D523C20D55177009D7BB3 /* UIPageControl+Extension.swift */,
 				F05D524220D9A2E1009D7BB3 /* UIView+Extension.swift */,
+				F03C69FF212E094900F53482 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +369,7 @@
 			files = (
 				F00A41BB20D1A20E00CD5F72 /* EggSelector.xib in Resources */,
 				F0C25C0B20CBD1CC009F4455 /* LaunchScreen.storyboard in Resources */,
+				F09F844F212710D40033D09C /* Guidance.xib in Resources */,
 				F0C25C0820CBD1CC009F4455 /* Assets.xcassets in Resources */,
 				F0C25C0620CBD1CA009F4455 /* Main.storyboard in Resources */,
 			);
@@ -401,10 +417,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Egg Timer Prototype/Pods-Egg Timer Prototype-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwipeUpView/SwipeUpView.framework",
 				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeUpView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,9 +473,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F092531A213C68BB00CE9355 /* DoneScreenView.swift in Sources */,
 				F05D524320D9A2E1009D7BB3 /* UIView+Extension.swift in Sources */,
+				F09F844D212710A60033D09C /* Guidance.swift in Sources */,
+				F03C69FE2127234500F53482 /* ProgramaticViewController.swift in Sources */,
 				F0C188102125823800D43E4E /* Eggs.swift in Sources */,
-				F00A41B320CC07BB00CD5F72 /* CircularRounderButton.swift in Sources */,
+				F03C6A00212E094900F53482 /* UIColor+Extension.swift in Sources */,
+				F00A41B320CC07BB00CD5F72 /* CircularRoundedButton.swift in Sources */,
 				F00A41A620CBF97200CD5F72 /* MainViewController.swift in Sources */,
 				F00A41B120CC05D700CD5F72 /* BoilRoundedButton.swift in Sources */,
 				F00A41B520D19C2700CD5F72 /* Egg.swift in Sources */,

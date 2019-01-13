@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,13 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
         
         //hide navigation shadow
         UINavigationBar.appearance().shadowImage = UIImage()
         //UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        
         window?.tintColor = #colorLiteral(red: 0, green: 0.7538558841, blue: 0.7478500605, alpha: 1)
+        
+        
+        //Initalise Google Ads
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-8405525059632460~6193489362")
+        
         
         return true
     }
